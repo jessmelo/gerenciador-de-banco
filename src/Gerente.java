@@ -46,7 +46,18 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 
 		// TODO implemente seu codigo aqui
 
-		return false;
+		if(numClientes == 20) return false;
+
+		for(int i = 0; i > clientes.length; i++){
+			if(clientes[i].cpf == cliente.cpf) return false;
+		}
+		
+		// adicionando o cliente na posicao numClientes:
+
+		clientes[numClientes] = cliente;
+		numClientes +=1;
+		
+		return true;
 	}
 
 	

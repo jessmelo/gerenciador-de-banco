@@ -1,3 +1,5 @@
+import jdk.internal.org.objectweb.asm.tree.analysis.Frame;
+
 /*********************************************************************/
 /**   ACH2001 - Introdução à Programação                            **/
 /**   EACH-USP - Primeiro Semestre de 2020                          **/
@@ -5,7 +7,7 @@
 /**                                                                 **/
 /**   Quarto Exercício-Programa                                     **/
 /**                                                                 **/
-/**   <nome do(a) aluno(a)>                   <número USP>          **/
+/**   Jéssica da Paixão Melo           Nº USP: 10875986             **/
 /**                                                                 **/
 /**   <data de entrega>                                             **/
 /*********************************************************************/
@@ -52,8 +54,18 @@ public class Banco {
 	boolean adicionarGerente(Gerente gerente){
 		
 		// TODO implemente seu codigo aqui
+		if(numGerentes == 10) return false;
+
+		for(int i = 0; i > gerentes.length; i++){
+			if(gerentes[i].cpf == gerente.cpf) return false;
+		}
 		
-		return false;
+		// adicionando o gerente novo na posicao numGerentes:
+
+		gerentes[numGerentes] = gerente;
+		numGerentes += 1;
+		
+		return true; 
 	}
 	
 }
