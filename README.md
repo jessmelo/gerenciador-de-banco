@@ -1,2 +1,2 @@
 # gerenciador-de-banco
-sistema gerenciador de banco financeiro feito em java
+sistema de gerenciamento de banco financeiro feito em java
