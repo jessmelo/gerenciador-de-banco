@@ -120,7 +120,8 @@ public class Cliente extends Pessoa implements InterfaceCliente{
 		if(valor > valorContaCorrente){
 			return false;
 		} else {
-			valorContaCorrente = valorContaCorrente - conta;
+			valorContaCorrente = valorContaCorrente - valor;
+			return true;
 		}
 		
 	}

@@ -1,5 +1,3 @@
-import jdk.internal.org.objectweb.asm.tree.analysis.Frame;
-
 /*********************************************************************/
 /**   ACH2001 - Introdução à Programação                            **/
 /**   EACH-USP - Primeiro Semestre de 2020                          **/

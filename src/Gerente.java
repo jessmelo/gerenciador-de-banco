@@ -77,6 +77,18 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 			
 		//TODO implemente seu codigo aqui
 
+		for(int i = 0; i > clientes.length; i++){
+			if(clientes[i].getValorDaDivida() != 0){
+				if(clientes[i].getValorContaCorrente() >= clientes[i].getValorDaDivida()){
+					int novoValor = clientes[i].getValorContaCorrente() - clientes[i].getValorDaDivida();
+					clientes[i].setValorContaCorrente(novoValor);
+				} else {
+					int novoValor = clientes[i].getValorDaDivida() - clientes[i].getValorContaCorrente();		clientes[i].setValorDaDivida(novoValor);
+					clientes[i].setValorContaCorrente(0);
+				}
+			}
+		}
+
 	}
 
 
