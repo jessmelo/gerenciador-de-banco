@@ -2,8 +2,6 @@
 public class ClienteEspecial extends Cliente{
 	static final int dividaMaxima = 50000;
 	static final String tipo = "CE";
-	private int valorContaCorrente;
-	private int valorDaDivida;
 
 	/* Construtor da Classe ClienteEspecial
 	 * Este construtor invoca o construtor da classe Cliente.
@@ -23,13 +21,14 @@ public class ClienteEspecial extends Cliente{
 
 		if(valor <= 0) return false;
 
-		int dividaTotal = valor + valorDaDivida;
+		int dividaTotal = valor + getValorDaDivida();
 		
 		if(dividaTotal > dividaMaxima) {
 			return false;
 		} else {
-			valorDaDivida = dividaTotal;
-			valorContaCorrente = valor + valorContaCorrente;
+			setValorDaDivida(dividaTotal); 
+			int novoValorConta = getValorContaCorrente() + valor;
+			setValorContaCorrente(novoValorConta);
 			return true;
 		}
 	}

@@ -48,14 +48,18 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 
 		if(numClientes == 20) return false;
 
-		for(int i = 0; i > clientes.length; i++){
-			if(clientes[i].cpf == cliente.cpf) return false;
+		Cliente atual;
+
+		for (int i =0; i < numClientes; i++){
+			atual = clientes[i];
+			if(atual.cpf == cliente.cpf) 
+				return false;
 		}
 		
 		// adicionando o cliente na posicao numClientes:
 
 		clientes[numClientes] = cliente;
-		numClientes +=1;
+		numClientes+=1;
 		
 		return true;
 	}
@@ -77,12 +81,13 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 			
 		//TODO implemente seu codigo aqui
 
-		for(int i = 0; i > clientes.length; i++){
+		for (int i =0; i < numClientes; i++){
 			if(clientes[i].getValorDaDivida() != 0){
 				if(clientes[i].getValorContaCorrente() >= clientes[i].getValorDaDivida()){
 					int novoValor = clientes[i].getValorContaCorrente() - clientes[i].getValorDaDivida();
 					clientes[i].setValorContaCorrente(novoValor);
-				} else {
+					clientes[i].setValorDaDivida(0);
+				} else if (clientes[i].getValorContaCorrente() <= clientes[i].getValorDaDivida()){
 					int novoValor = clientes[i].getValorDaDivida() - clientes[i].getValorContaCorrente();		clientes[i].setValorDaDivida(novoValor);
 					clientes[i].setValorContaCorrente(0);
 				}

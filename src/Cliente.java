@@ -77,7 +77,7 @@ public class Cliente extends Pessoa implements InterfaceCliente{
 		
 		//TODO implemente seu codigo aqui
 
-		if(valor >= 0) return false;
+		if(valor <= 0) return false;
 		
 		if (valor > valorDaDivida || valor > valorContaCorrente){
 			return false;

@@ -1,13 +1,13 @@
 /*********************************************************************/
 /**   ACH2001 - Introdução à Programação                            **/
 /**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   <turma> - <nome do professor>                                 **/
+/**   Turma 04 - Norton Trevisan Roman                              **/
 /**                                                                 **/
 /**   Quarto Exercício-Programa                                     **/
 /**                                                                 **/
 /**   Jéssica da Paixão Melo           Nº USP: 10875986             **/
 /**                                                                 **/
-/**   <data de entrega>                                             **/
+/**   16/06/2020	                                                **/
 /*********************************************************************/
 
 public class Banco {

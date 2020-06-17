@@ -24,6 +24,10 @@ public class ExecutaBanco {
 		
 		if (ger1.adicionarCliente(c1)) System.out.println("Cliente '"  +c1.nome + "' adicionado corretamente.");
 		else System.out.println("Cliente '"  + c1.nome + "' nao pode ser adicionado.");
+		if (ger1.adicionarCliente(c1)) System.out.println("Cliente '"  +c1.nome + "' adicionado corretamente.");
+		else System.out.println("Cliente '"  + c1.nome + "' nao pode ser adicionado.");
+		if (ger1.adicionarCliente(c1)) System.out.println("Cliente '"  +c1.nome + "' adicionado corretamente.");
+		else System.out.println("Cliente '"  + c1.nome + "' nao pode ser adicionado.");
 		
 		if (ger1.adicionarCliente(c2)) System.out.println("Cliente '"  +c2.nome + "' adicionado corretamente.");
 		else System.out.println("Cliente '"  + c2.nome + "' nao pode ser adicionado.");
@@ -31,6 +35,7 @@ public class ExecutaBanco {
 		if (ger1.adicionarCliente(c2)) System.out.println("Cliente '"  +c2.nome + "' adicionado corretamente.");
 		else System.out.println("Cliente '"  + c2.nome + "' nao pode ser adicionado.");
 		
+		ger1.imprimirClientes();
 		if (ger1.adicionarCliente(c3)) System.out.println("Cliente '"  + c3.nome + "' adicionado corretamente.");
 		else System.out.println("Cliente '"  + c3.nome + "' nao pode ser adicionado.");
 		
@@ -66,6 +71,9 @@ public class ExecutaBanco {
 
 		if (c2.obterEmprestimo(20000))  System.out.println("Cliente '"  + c2.nome + "' obteve o emprestimo solicitado.");
 		else  System.out.println("Cliente '"  + c2.nome + "' nao obteve o emprestimo solicitado.");
+		
+		if (c2.obterEmprestimo(20000))  System.out.println("Cliente '"  + c2.nome + "' obteve o emprestimo solicitado.");
+		else  System.out.println("Cliente '"  + c2.nome + "' nao obteve o emprestimo solicitado.");
 
 		
 		meuBanco.imprimir();
@@ -84,6 +92,9 @@ public class ExecutaBanco {
 
 		if (c1.realizarSaque(1))  System.out.println("Cliente '"  + c1.nome + "' realizou saque solicitado.");
 		else  System.out.println("Cliente '"  + c1.nome + "' nao pode realizar o saque solicitado.");
+
+		if (c4.realizarSaque(100000))  System.out.println("Cliente '"  + c4.nome + "' realizou saque solicitado.");
+		else  System.out.println("Cliente '"  + c4.nome + "' nao pode realizar o saque solicitado.");
 
 		
 		meuBanco.imprimir();
