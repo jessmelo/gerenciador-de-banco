@@ -17,8 +17,6 @@ public class ClienteEspecial extends Cliente{
 	
 	public boolean obterEmprestimo(int valor) {
 		
-		//TODO implemente seu codigo aqui
-
 		if(valor <= 0) return false;
 
 		int dividaTotal = valor + getValorDaDivida();

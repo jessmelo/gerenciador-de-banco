@@ -44,8 +44,6 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 	 */
 	public boolean adicionarCliente(Cliente cliente) {
 
-		// TODO implemente seu codigo aqui
-
 		if(numClientes == 20) return false;
 
 		Cliente atual;
@@ -79,8 +77,6 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 	 */
 	public void cobrarTodosEmprestimos() {
 			
-		//TODO implemente seu codigo aqui
-
 		for (int i =0; i < numClientes; i++){
 			if(clientes[i].getValorDaDivida() != 0){
 				if(clientes[i].getValorContaCorrente() >= clientes[i].getValorDaDivida()){
@@ -88,7 +84,8 @@ public class Gerente extends Pessoa implements InterfaceGerente{
 					clientes[i].setValorContaCorrente(novoValor);
 					clientes[i].setValorDaDivida(0);
 				} else if (clientes[i].getValorContaCorrente() <= clientes[i].getValorDaDivida()){
-					int novoValor = clientes[i].getValorDaDivida() - clientes[i].getValorContaCorrente();		clientes[i].setValorDaDivida(novoValor);
+					int novoValor = clientes[i].getValorDaDivida() - clientes[i].getValorContaCorrente();
+					clientes[i].setValorDaDivida(novoValor);
 					clientes[i].setValorContaCorrente(0);
 				}
 			}

@@ -14,6 +14,12 @@ public class ExecutaBanco {
 		System.out.println("*** Instanciando Gerentes **************************************");
 		Gerente ger1 = new Gerente("Gerente 1", 12345);
 		Gerente ger2 = new Gerente("Gerente 2", 12121);
+		Gerente ger3 = new Gerente("Gerente 1", 12345);
+		Gerente ger4 = new Gerente("Gerente 2", 12121);
+		Gerente ger5 = new Gerente("Gerente 5", 12345);
+		Gerente ger6 = new Gerente("Gerente 8", 12121);
+		Gerente ger7 = new Gerente("Gerente 3", 12347);
+		Gerente ger8 = new Gerente("Gerente 4", 12129);
 		
 		System.out.println("*** Instanciando um Banco **************************************");
 		Banco meuBanco = new Banco();
@@ -51,6 +57,12 @@ public class ExecutaBanco {
 		
 		meuBanco.adicionarGerente(ger1);
 		meuBanco.adicionarGerente(ger2);
+		meuBanco.adicionarGerente(ger3);
+		meuBanco.adicionarGerente(ger4);
+		meuBanco.adicionarGerente(ger5);
+		meuBanco.adicionarGerente(ger6);
+		meuBanco.adicionarGerente(ger7);
+		meuBanco.adicionarGerente(ger8);
 		
 		meuBanco.imprimir();
 		

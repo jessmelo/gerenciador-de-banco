@@ -75,8 +75,6 @@ public class Cliente extends Pessoa implements InterfaceCliente{
 	 */
 	public boolean pagarEmprestimo(int valor) {
 		
-		//TODO implemente seu codigo aqui
-
 		if(valor <= 0) return false;
 		
 		if (valor > valorDaDivida || valor > valorContaCorrente){
@@ -95,8 +93,6 @@ public class Cliente extends Pessoa implements InterfaceCliente{
 	 */
 	public boolean negativado() {
 		
-		//TODO implemente seu codigo aqui
-
 		if(valorContaCorrente < valorDaDivida) return true;
 
 		return false;
@@ -113,8 +109,6 @@ public class Cliente extends Pessoa implements InterfaceCliente{
 	 */
 	public boolean realizarSaque(int valor) {
 		
-		//TODO implemente seu codigo aqui
-
 		if(valor <= 0) return false;
 
 		if(valor > valorContaCorrente){

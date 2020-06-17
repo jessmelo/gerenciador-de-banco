@@ -7,7 +7,7 @@
 /**                                                                 **/
 /**   Jéssica da Paixão Melo           Nº USP: 10875986             **/
 /**                                                                 **/
-/**   16/06/2020	                                                **/
+/**   17/06/2020	                                                **/
 /*********************************************************************/
 
 public class Banco {
@@ -51,11 +51,13 @@ public class Banco {
 	 */
 	boolean adicionarGerente(Gerente gerente){
 		
-		// TODO implemente seu codigo aqui
 		if(numGerentes == 10) return false;
 
-		for(int i = 0; i > gerentes.length; i++){
-			if(gerentes[i].cpf == gerente.cpf) return false;
+		Gerente atual;
+
+		for (int i =0; i < numGerentes; i++){
+			atual = gerentes[i];
+			if(atual.cpf == gerente.cpf) return false;
 		}
 		
 		// adicionando o gerente novo na posicao numGerentes:
